@@ -3,7 +3,7 @@
 This is something I cooked up in the process of figuring out how to glue together
 [buck](https://buckbuild.com/) (Facebook's build tool), and [Simple Binary Encoding](https://github.com/real-logic/simple-binary-encoding) (SBE).
 
-We use buck at my employer [lmax](https://www.lmax.com/), and want to try and
+We use buck at my employer [LMAX](https://www.lmax.com/), and want to try and
 use SBE in the future, so figuring out to to make SBE's code generation tool
 work in buck is something I wanted to figure out how to do.
 
