@@ -13,7 +13,7 @@ This assumes you have buck installed: https://buckbuild.com/setup/getting_starte
 Some knowledge of how buck works is probably required for this to be useful.
 
 ```
-$ buck run :result bin
+$ buck run :result-bin
 # A
 # B
 # C
