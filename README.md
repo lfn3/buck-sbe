@@ -12,10 +12,12 @@ work in buck is something I wanted to figure out how to do.
 This assumes you have buck installed: https://buckbuild.com/setup/getting_started.html
 Some knowledge of how buck works is probably required for this to be useful.
 
-`$ buck run :result bin
+```
+$ buck run :result bin
 # A
 # B
-# C`
+# C
+```
 
 If you want to edit the code: `buck build :copy-sbe-genned` so you can actually
 see the SBE generated files.
