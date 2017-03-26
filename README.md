@@ -24,8 +24,10 @@ see the SBE generated files.
 
 ### Commentary
 
-Most of the work happens in the two genrules in the buckfile. The first one is
-responsible for actually running the SBE code generator, and the second one
+Most of the work happens in the two genrules in the buckfile. 
+The [first one](https://github.com/lfn3/buck-sbe/blob/master/BUCK#L39) is
+responsible for actually running the SBE code generator, and the 
+[second one](https://github.com/lfn3/buck-sbe/blob/master/BUCK#L52)
 copies the resulting files into the src/generated directory so they're visible
 to intellij.
 
