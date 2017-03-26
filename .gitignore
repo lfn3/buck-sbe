@@ -1,0 +1,5 @@
+.buckd
+.idea
+buck-out
+src/generated
+*.iml
