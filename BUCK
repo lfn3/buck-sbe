@@ -1,3 +1,4 @@
+#Dependencies
 remote_file(
     name = 'sbe-tool',
     url = 'mvn:uk.co.real-logic:sbe-tool:jar:1.6.0',
@@ -36,6 +37,7 @@ java_binary(
     main_class = 'uk.co.real_logic.sbe.SbeTool'
 )
 
+#Where the magic happens
 def generate_sbe_stubs(name, namespace, srcs=[]):
     genrule(
         name = name + '-sbe-tool-gen',
@@ -65,8 +67,10 @@ def generate_sbe_stubs(name, namespace, srcs=[]):
         source_jar = ':' + name + '-sources'
     )
 
+#Use that magic
 generate_sbe_stubs('sbe-build', 'sbe_build', ['example-schema.xml'])
 
+#Bundle the magic and our sources
 java_library(
     name = 'result',
     srcs = glob(['src/main/java/**']),
