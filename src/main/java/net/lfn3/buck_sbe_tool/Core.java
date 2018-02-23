@@ -1,6 +1,6 @@
 package net.lfn3.buck_sbe_tool;
 
-import baseline.Model;
+import sbe_build.Model;
 
 public class Core {
     public static void main(String[] args) {
